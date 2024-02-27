@@ -1,9 +1,9 @@
 import UIKit
 
-class Settings: UIViewController {
+final class Settings: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        view.backgroundColor = .red
+        view.backgroundColor = .systemBackground
     }
 }
