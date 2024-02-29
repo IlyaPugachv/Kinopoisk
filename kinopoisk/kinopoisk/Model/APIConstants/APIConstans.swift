@@ -1,6 +1,6 @@
 import UIKit
 
-struct APIConstans {
+struct APIConstans: Codable {
     
     static let myAPI = "VR6TBA5-NT0MCJJ-GK49GZ4-TAYGGW0"
     
