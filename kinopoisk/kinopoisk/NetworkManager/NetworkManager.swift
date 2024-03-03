@@ -7,28 +7,26 @@ final class NetworkManager {
     private init() {}
     
     static func getCollectionsFilms(completion: @escaping (Result<MovieRandom, Error>) -> Void) {
-        let url = "https://api.kinopoisk.dev/v1.4/movie/random?id=string"
+        let url = "\(APIConstans.request)v1.4/movie/random?notNullFields=name&notNullFields=poster.url&type=movie"
         let headers: HTTPHeaders = ["X-API-KEY" : APIConstans.myAPI]
         AF.request(url, method: .get, encoding: JSONEncoding.default, headers: headers).response { response in
             switch response.result {
             case .success(let data):
-                if let data = data, let jsonString = String(data: data, encoding: .utf8) {
-                    print("Полученные данные: \(jsonString)")
+                if let data = data {
                     do {
                         let decoder = JSONDecoder()
                         let result = try decoder.decode(MovieRandom.self, from: data)
-                        print("Успешно декодированные данные: \(result)")
                         completion(.success(result))
                     } catch {
                         print("Ошибка декодирования: \(error)")
                         completion(.failure(error))
                     }
-                    
-                    
                 }
             case .failure(let error):
+                print("Ошибка при выполнении запроса: \(error.localizedDescription)")
                 completion(.failure(error))
             }
         }
     }
 }
+

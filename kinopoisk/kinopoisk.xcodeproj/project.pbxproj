@@ -19,6 +19,7 @@
 		BCB7E7B82B8FAB42004CA87B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCB7E7B72B8FAB42004CA87B /* Alamofire */; };
 		BCB7E7BB2B90EE50004CA87B /* MovieRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7E7BA2B90EE50004CA87B /* MovieRandom.swift */; };
 		BCB7E7BE2B935DB6004CA87B /* MovieRandomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7E7BD2B935DB6004CA87B /* MovieRandomViewCell.swift */; };
+		BCB7E7C12B947242004CA87B /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = BCB7E7C02B947242004CA87B /* Kingfisher */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				BCB7E7C12B947242004CA87B /* Kingfisher in Frameworks */,
 				BCB7E7B82B8FAB42004CA87B /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -182,6 +184,7 @@
 			name = kinopoisk;
 			packageProductDependencies = (
 				BCB7E7B72B8FAB42004CA87B /* Alamofire */,
+				BCB7E7C02B947242004CA87B /* Kingfisher */,
 			);
 			productName = kinopoisk;
 			productReference = BC887E702B87A47F0082756B /* kinopoisk.app */;
@@ -213,6 +216,7 @@
 			mainGroup = BC887E672B87A47F0082756B;
 			packageReferences = (
 				BCB7E7B62B8FAB42004CA87B /* XCRemoteSwiftPackageReference "Alamofire" */,
+				BCB7E7BF2B947242004CA87B /* XCRemoteSwiftPackageReference "Kingfisher" */,
 			);
 			productRefGroup = BC887E712B87A47F0082756B /* Products */;
 			projectDirPath = "";
@@ -481,6 +485,14 @@
 				minimumVersion = 5.8.1;
 			};
 		};
+		BCB7E7BF2B947242004CA87B /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
 /* End XCRemoteSwiftPackageReference section */
 
 /* Begin XCSwiftPackageProductDependency section */
@@ -488,6 +500,11 @@
 			isa = XCSwiftPackageProductDependency;
 			package = BCB7E7B62B8FAB42004CA87B /* XCRemoteSwiftPackageReference "Alamofire" */;
 			productName = Alamofire;
+		};
+		BCB7E7C02B947242004CA87B /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = BCB7E7BF2B947242004CA87B /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
 		};
 /* End XCSwiftPackageProductDependency section */
 	};

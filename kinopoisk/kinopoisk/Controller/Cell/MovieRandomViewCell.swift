@@ -5,7 +5,7 @@ class MovieTableViewCell: UITableViewCell {
     let movieImageView: UIImageView = {
         let imageView = UIImageView()
         imageView.contentMode = .scaleAspectFill // Чтобы изображение красиво заполняло свою область
-        imageView.clipsToBounds = true
+        imageView.clipsToBounds = false
         return imageView
     }()
     
