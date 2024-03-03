@@ -18,6 +18,7 @@
 		BCB7E7A72B8F9778004CA87B /* APIConstans.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7E7A62B8F9778004CA87B /* APIConstans.swift */; };
 		BCB7E7B82B8FAB42004CA87B /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = BCB7E7B72B8FAB42004CA87B /* Alamofire */; };
 		BCB7E7BB2B90EE50004CA87B /* MovieRandom.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7E7BA2B90EE50004CA87B /* MovieRandom.swift */; };
+		BCB7E7BE2B935DB6004CA87B /* MovieRandomViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = BCB7E7BD2B935DB6004CA87B /* MovieRandomViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +34,7 @@
 		BCB7E7A42B8F924D004CA87B /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
 		BCB7E7A62B8F9778004CA87B /* APIConstans.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIConstans.swift; sourceTree = "<group>"; };
 		BCB7E7BA2B90EE50004CA87B /* MovieRandom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRandom.swift; sourceTree = "<group>"; };
+		BCB7E7BD2B935DB6004CA87B /* MovieRandomViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieRandomViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -98,6 +100,7 @@
 		BC887E892B87A4D40082756B /* Controller */ = {
 			isa = PBXGroup;
 			children = (
+				BCB7E7BC2B935D6F004CA87B /* Cell */,
 				BC84A27B2B8CFF70007DE95E /* HomeVC.swift */,
 				BC84A27F2B8D1136007DE95E /* Settings.swift */,
 				BC84A27D2B8D10D5007DE95E /* TabBarController.swift */,
@@ -151,6 +154,14 @@
 				BCB7E7BA2B90EE50004CA87B /* MovieRandom.swift */,
 			);
 			path = MovieRandom;
+			sourceTree = "<group>";
+		};
+		BCB7E7BC2B935D6F004CA87B /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				BCB7E7BD2B935DB6004CA87B /* MovieRandomViewCell.swift */,
+			);
+			path = Cell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -231,6 +242,7 @@
 			files = (
 				BCB7E7A52B8F924D004CA87B /* NetworkManager.swift in Sources */,
 				BC84A27C2B8CFF70007DE95E /* HomeVC.swift in Sources */,
+				BCB7E7BE2B935DB6004CA87B /* MovieRandomViewCell.swift in Sources */,
 				BC84A27E2B8D10D5007DE95E /* TabBarController.swift in Sources */,
 				BCB7E7A72B8F9778004CA87B /* APIConstans.swift in Sources */,
 				BC887E742B87A47F0082756B /* AppDelegate.swift in Sources */,
